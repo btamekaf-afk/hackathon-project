@@ -1,9 +1,0 @@
-services:
-  graphlens:
-    build: .
-    ports:
-      - "3000:3000"
-    volumes:
-      - graphlens-data:/app/data
-volumes:
-  graphlens-data:
