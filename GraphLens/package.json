@@ -1,0 +1,22 @@
+{
+  "name": "graphlens",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "node scripts/server.mjs",
+    "start": "node scripts/server.mjs",
+    "test": "node --input-type=module -e \"import {writeAssets} from './scripts/write-assets.mjs'; await writeAssets()\" && node --test test/*.test.mjs",
+    "build": "node scripts/build.mjs",
+    "demo": "node scripts/demo.mjs"
+  },
+  "dependencies": {
+    "graphql": "16.11.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12"
+  }
+}
